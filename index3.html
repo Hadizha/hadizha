@@ -5,102 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <style>
-    .Menu{
-background: rgb(235, 104, 180);
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-position: fixed;
-width: 100%;
-font-size: 25px;
-padding: 15px;
-border-bottom: 2px solid rgb(99, 247, 247);
-    }
-
-    .Menu-right{
-position: absolute;
-right: 50px;
-    }
-    .Menu-left{
-font-weight: bold;
-color: aqua;
-    }
-    .Menu-right a{
-        color: aquamarine;
-        text-decoration: none;
-        margin-left: 20px;
-    }
-    .Menu-right a:hover{
-        color: blueviolet;
-        }
-    body{
-        margin: 0;
-        background-image: url(22.jfif);
-        background-size: contain;
-         }
-
-    .email{
-        display: inline-block;
-        margin-top: 80px;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        width: fit-content;
-
-    }
-    .search{
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: auto;
-        width: fit-content;
-    }
-    .banner{
-        width: 100%;
-        height: 200px;
-        background-size: cover;
-        background-image: url(24.jpg);
-    }
-    .banner-title{
-position: relative;
-margin: auto;
-width: fit-content;
-display: inline-block;
-margin-top: 100px;
-font-size: 50px;
-font-weight: 900;
-color: rgb(235, 29, 115)
-
-    }
-    </style>
     <div class="Menu">
         <span class="Menu-left">Menu</span>
         <span class="Menu-right">
-                <a href="https://ya.ru">Yandex</a>
-                <a href="index2.html">Main</a>
-                <a href="12.jpg">Sunset</a>
+                <a href="#">Main</a>
+                <a href="#main">Just</a>
+                <a href="#footer">Sunset</a>
                 <a href="https://www.youtube.com/watch?v=m9U1o6L58-o">Sea</a>
         </span>
     </div>
     <div class="banner">
         <div class="background"></div>
-        <div class="banner-title">Sunsets beautiful</div>
-
-    </div>
-    <div>
-            <form>
-              <div class="email">
-                    Inter email: <input type="text" name="email">
-                    <input type="button" value="Confirm">
-              </div>
-            </form>
+        <div class="banner-title">Sunsets beautiful
         </div>
-        <div>
-                <form action="https://yandex.ru/search/">
-                  <div class="search">
-                        Inter request: <input type="text" name="text">
-                        <input type="submit" value="Find">
-                  </div>
-                </form>
+    </div>
+    <div class="main-cards">
+        <div class="main-header">
+            <h1>Best sunsets in a world</h1>
+            <p>If you want to see them come on</p>
+        </div>
+        <div class="main-sunsets">
+            <div class="sunsets-card">
+                <div class="card-image">
+                    <img width="300px" src="6.jpeg">
+                </div>
+                <div class="card-text">
+                    <h4>Pink</h4>
+                    <p>The best</p>
+                    <a href="#" class="card-button">Read more</a>
+                </div>
+            
             </div>
+            <div class="sunsets-card">
+                    <div class="card-image">
+                        <img width="300px" src="7.jpg">
+                    </div>
+                    <div class="card-text">
+                        <h4>Purple</h4>
+                        <p>The best</p>
+                        <a href="#" class="card-button">Read more</a>
+                    </div>
+        </div>
+
+    
+    </div>
+    <footer class="footer" id="footer">
+            <div>
+                    <form>
+                      <div class="email">
+                            Inter email: <input class="form-text" type="text" name="email">
+                            <input class="form-button" type="button" value="Confirm">
+                      </div>
+                    </form>
+                </div>
+                <div>
+                        <form action="https://yandex.ru/search/">
+                          <div class="search">
+                                Inter request: <input  class="form-text" type="text" name="text">
+                                <input  class="form-button" type="submit" value="Find">
+                          </div>
+                        </form>
+                    </div>
+    </footer>
+   
 </body>
 </html> 
